@@ -41,4 +41,4 @@ We recommend that you test the custom command on your local machine before you u
 
 5. Select *LMSCornerRecordRename.dll* that you built in the previous section.
 
-6. On the AutoCAD command line, enter OCPWRENAME. If the plug-in executes as designed, the CAD drawing file will be updated and generated. The file is typically saved in the folder that you most recently interacted with in AutoCAD. Note before running the command make sure the json file is path correctly check code line 34. 
+6. On the AutoCAD command line, enter OCPWRENAME. If the plug-in executes as designed, the CAD drawing file will be updated and generated. The file is typically saved in the folder that you most recently interacted with in AutoCAD. Note before running the command make sure the json file is path correctly. 
