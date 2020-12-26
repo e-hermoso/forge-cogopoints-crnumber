@@ -66,5 +66,17 @@
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="OCPWRN.bundle\Contents\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="OCPWRN.bundle\PackageContents.xml" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>xcopy /Y /F "$(TargetDir)*.dll" "$(ProjectDir)OCPWRN.bundle\Contents\"
+del /F "$(ProjectDir)..\Bundles\OCPWRN.zip"
+"C:\Program Files\7-Zip\7z.exe" a -tzip "$(ProjectDir)../Bundles/OCPWRN.zip" "$(ProjectDir)OCPWRN.bundle\" -xr0!*.pdb
+</PostBuildEvent>
+  </PropertyGroup>
 </Project>
