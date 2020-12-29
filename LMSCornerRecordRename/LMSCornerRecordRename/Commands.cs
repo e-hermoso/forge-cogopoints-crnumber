@@ -101,7 +101,7 @@ namespace CornerRecordUpdate
                                                 if (dynamicResultObject.ContainsKey(crNumChecked.ToString()))
                                                 {
                                                     //ed.WriteMessage("\n" + dynamicResultObject[crNumChecked.ToString()]);
-                                                    cogoPointItem.SetUDPValue(udpString, dynamicResultObject[crNumChecked.ToString()].ToString() + ", " + crNumChecked);
+                                                    cogoPointItem.SetUDPValue(udpString, dynamicResultObject[crNumChecked.ToString()].ToString());
                                                 }
                                             }
                                         }

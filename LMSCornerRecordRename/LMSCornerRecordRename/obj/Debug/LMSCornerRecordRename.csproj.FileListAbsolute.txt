@@ -7,3 +7,12 @@ C:\Users\erich\source\github-repos\crx-plugins\forge-cogopoints-crnumber\LMSCorn
 C:\Users\erich\source\github-repos\crx-plugins\forge-cogopoints-crnumber\LMSCornerRecordRename\LMSCornerRecordRename\obj\Debug\LMSCornerRecordRename.csproj.CopyComplete
 C:\Users\erich\source\github-repos\crx-plugins\forge-cogopoints-crnumber\LMSCornerRecordRename\LMSCornerRecordRename\obj\Debug\LMSCornerRecordRename.dll
 C:\Users\erich\source\github-repos\crx-plugins\forge-cogopoints-crnumber\LMSCornerRecordRename\LMSCornerRecordRename\obj\Debug\LMSCornerRecordRename.pdb
+C:\Users\OCPWHermosoE\source\github-repo-CAD\forge-cogopoints-crnumber\LMSCornerRecordRename\LMSCornerRecordRename\bin\Debug\LMSCornerRecordRename.dll
+C:\Users\OCPWHermosoE\source\github-repo-CAD\forge-cogopoints-crnumber\LMSCornerRecordRename\LMSCornerRecordRename\bin\Debug\LMSCornerRecordRename.pdb
+C:\Users\OCPWHermosoE\source\github-repo-CAD\forge-cogopoints-crnumber\LMSCornerRecordRename\LMSCornerRecordRename\bin\Debug\Newtonsoft.Json.dll
+C:\Users\OCPWHermosoE\source\github-repo-CAD\forge-cogopoints-crnumber\LMSCornerRecordRename\LMSCornerRecordRename\bin\Debug\Newtonsoft.Json.xml
+C:\Users\OCPWHermosoE\source\github-repo-CAD\forge-cogopoints-crnumber\LMSCornerRecordRename\LMSCornerRecordRename\obj\Debug\LMSCornerRecordRename.csprojAssemblyReference.cache
+C:\Users\OCPWHermosoE\source\github-repo-CAD\forge-cogopoints-crnumber\LMSCornerRecordRename\LMSCornerRecordRename\obj\Debug\LMSCornerRecordRename.csproj.CoreCompileInputs.cache
+C:\Users\OCPWHermosoE\source\github-repo-CAD\forge-cogopoints-crnumber\LMSCornerRecordRename\LMSCornerRecordRename\obj\Debug\LMSCornerRecordRename.csproj.CopyComplete
+C:\Users\OCPWHermosoE\source\github-repo-CAD\forge-cogopoints-crnumber\LMSCornerRecordRename\LMSCornerRecordRename\obj\Debug\LMSCornerRecordRename.dll
+C:\Users\OCPWHermosoE\source\github-repo-CAD\forge-cogopoints-crnumber\LMSCornerRecordRename\LMSCornerRecordRename\obj\Debug\LMSCornerRecordRename.pdb
