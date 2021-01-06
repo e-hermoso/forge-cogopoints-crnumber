@@ -1,4 +1,4 @@
-# Rename Corner Record Forms,Layout, and COGO Points with record numbers
+# Rename Corner Record Forms, Layout, and COGO Points with record numbers
 
 ## Description
 
