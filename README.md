@@ -1,4 +1,4 @@
-# Extract COGO Points and check Corner Record Forms for Orange County Survey
+# Rename Corner Record Forms,Layout, and COGO Points with record numbers
 
 ## Description
 
