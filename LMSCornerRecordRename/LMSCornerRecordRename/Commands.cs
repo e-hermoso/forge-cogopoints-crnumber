@@ -146,16 +146,16 @@ namespace CornerRecordUpdate
                     {
                         if (layoutPages.Contains(entry.Key))
                         {
-                            layoutMgr.RenameLayout(entry.Key, dynamicResultObject[entry.Value].ToString());
-                            
-                            var crFormItems = layoutPages.GetAt(entry.Key).GetObject(OpenMode.ForRead) as Layout;
+
+                            var layoutObj= layoutPages.GetAt(entry.Key);
+                            var crFormItems = layoutObj.GetObject(OpenMode.ForWrite) as Layout;
                             var isModelSpace = crFormItems.ModelType;
                             if (isModelSpace != true)
                             {
-                                BlockTableRecord blkTblRec = tr.GetObject(crFormItems.BlockTableRecordId, OpenMode.ForRead) as BlockTableRecord;
+                                BlockTableRecord blkTblRec = tr.GetObject(crFormItems.BlockTableRecordId, OpenMode.ForWrite) as BlockTableRecord;
                                 foreach (ObjectId blkId in blkTblRec)
                                 {
-                                    var blkRef = tr.GetObject(blkId, OpenMode.ForRead) as BlockReference;
+                                    var blkRef = tr.GetObject(blkId, OpenMode.ForWrite) as BlockReference;
 
                                     if (blkRef != null && blkRef.IsDynamicBlock)
                                     {
@@ -163,7 +163,7 @@ namespace CornerRecordUpdate
 
                                         foreach (ObjectId attId in attCol)
                                         {
-                                            AttributeReference attRef = (AttributeReference)tr.GetObject(attId, OpenMode.ForRead);
+                                            AttributeReference attRef = (AttributeReference)tr.GetObject(attId, OpenMode.ForWrite);
 
                                             if (attRef.Tag.ToString() == "DOCUMENT_NUMBER1")
                                             {
@@ -177,6 +177,8 @@ namespace CornerRecordUpdate
                                     }
                                 }
                             }
+
+                            layoutMgr.RenameLayout(entry.Key, dynamicResultObject[entry.Value].ToString());
                         }
                     }
 
