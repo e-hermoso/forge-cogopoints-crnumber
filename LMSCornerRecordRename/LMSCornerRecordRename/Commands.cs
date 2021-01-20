@@ -147,6 +147,36 @@ namespace CornerRecordUpdate
                         if (layoutPages.Contains(entry.Key))
                         {
                             layoutMgr.RenameLayout(entry.Key, dynamicResultObject[entry.Value].ToString());
+                            
+                            var crFormItems = layoutPages.GetAt(entry.Key).GetObject(OpenMode.ForRead) as Layout;
+                            var isModelSpace = crFormItems.ModelType;
+                            if (isModelSpace != true)
+                            {
+                                BlockTableRecord blkTblRec = tr.GetObject(crFormItems.BlockTableRecordId, OpenMode.ForRead) as BlockTableRecord;
+                                foreach (ObjectId blkId in blkTblRec)
+                                {
+                                    var blkRef = tr.GetObject(blkId, OpenMode.ForRead) as BlockReference;
+
+                                    if (blkRef != null && blkRef.IsDynamicBlock)
+                                    {
+                                        AttributeCollection attCol = blkRef.AttributeCollection;
+
+                                        foreach (ObjectId attId in attCol)
+                                        {
+                                            AttributeReference attRef = (AttributeReference)tr.GetObject(attId, OpenMode.ForRead);
+
+                                            if (attRef.Tag.ToString() == "DOCUMENT_NUMBER1")
+                                            {
+                                                attRef.TextString = dynamicResultObject[entry.Value].ToString();
+                                            }
+                                            if (attRef.Tag.ToString() == "DOCUMENT_NUMBER2")
+                                            {
+                                                attRef.TextString = dynamicResultObject[entry.Value].ToString();
+                                            }
+                                        }
+                                    }
+                                }
+                            }
                         }
                     }
 
